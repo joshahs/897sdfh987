@@ -28,12 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Location = new System.Drawing.Point(12, 48);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(400, 300);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Location = new System.Drawing.Point(426, 48);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(400, 300);
+            this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(838, 360);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Name = "Form1";
+            this.Text = "Office Table";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
